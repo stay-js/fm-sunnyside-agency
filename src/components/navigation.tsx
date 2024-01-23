@@ -1,6 +1,6 @@
 import { useState } from 'react';
+import { Logo } from '~/components/logo';
 import { cn } from '~/utils/cn';
-import { Logo } from './logo';
 
 export const Navigation: React.FC = () => {
   const [isToggled, setIsToggled] = useState(false);

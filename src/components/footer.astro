@@ -1,0 +1,47 @@
+---
+import { FaFacebookSquare, FaInstagram, FaTwitter, FaPinterest } from 'react-icons/fa';
+import { Logo } from '~/components/logo';
+---
+
+<footer
+  class="bg-[#90d4c5] p-12 flex flex-col items-center [&_a:hover]:text-white [&_a]:transition-colors"
+>
+  <div class="text-[#2C7566]">
+    <Logo />
+  </div>
+
+  <ul class="mt-6 flex gap-16 justify-center text-dark-moderate-cyan">
+    <li>
+      <a href="#">About</a>
+    </li>
+    <li>
+      <a href="#">Services</a>
+    </li>
+    <li>
+      <a href="#">Projects</a>
+    </li>
+  </ul>
+
+  <ul class="mt-16 justify-center flex gap-8 text-[#2C7566]">
+    <li>
+      <a href="#" title="Facebook">
+        <FaFacebookSquare size={24} />
+      </a>
+    </li>
+    <li>
+      <a href="#" title="Instagram">
+        <FaInstagram size={24} />
+      </a>
+    </li>
+    <li>
+      <a href="#" title="Twitter">
+        <FaTwitter size={24} />
+      </a>
+    </li>
+    <li>
+      <a href="#" title="Pinterest">
+        <FaPinterest size={24} />
+      </a>
+    </li>
+  </ul>
+</footer>
