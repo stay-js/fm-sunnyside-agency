@@ -4,13 +4,13 @@ import { Logo } from '~/components/logo';
 ---
 
 <footer
-  class="bg-[#90d4c5] p-12 flex flex-col items-center [&_a:hover]:text-white [&_a]:transition-colors"
+  class="bg-footer-bg py-20 px-6 flex flex-col items-center [&_a:hover]:text-white [&_a]:transition-colors"
 >
-  <div class="text-[#2C7566]">
+  <div class="text-footer-dark">
     <Logo />
   </div>
 
-  <ul class="mt-6 flex gap-16 justify-center text-dark-moderate-cyan">
+  <ul class="mt-8 flex lg:gap-16 gap-10 justify-center text-dark-moderate-cyan">
     <li>
       <a href="#">About</a>
     </li>
@@ -22,7 +22,7 @@ import { Logo } from '~/components/logo';
     </li>
   </ul>
 
-  <ul class="mt-16 justify-center flex gap-8 text-[#2C7566]">
+  <ul class="mt-20 justify-center flex gap-8 text-footer-dark">
     <li>
       <a href="#" title="Facebook">
         <FaFacebookSquare size={24} />

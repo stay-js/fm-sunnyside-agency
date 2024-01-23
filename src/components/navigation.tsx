@@ -46,7 +46,7 @@ export const Navigation: React.FC = () => {
         <span className="-z-10 ml-auto block border-y-[2rem] border-r-[2rem] border-y-transparent border-r-off-white lg:hidden" />
         <ul
           className={cn(
-            'flex items-center gap-12 max-lg:-mt-8 max-lg:flex-col max-lg:bg-off-white max-lg:p-16 max-lg:text-xl',
+            'flex items-center gap-8 max-lg:-mt-8 max-lg:flex-col max-lg:bg-off-white max-lg:p-12 max-lg:text-xl',
             !isToggled && 'max-lg:hidden',
           )}
         >
