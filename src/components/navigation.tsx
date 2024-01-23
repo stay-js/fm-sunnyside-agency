@@ -38,13 +38,14 @@ export const Navigation: React.FC = () => {
 
       <div
         className={cn(
-          'left-0 top-24 max-lg:absolute max-lg:w-full max-lg:p-8',
+          'left-0 top-12 max-lg:absolute max-lg:w-full max-lg:p-6',
           !isToggled && 'max-lg:hidden',
         )}
       >
+        <span className="-z-10 ml-auto block border-y-[2rem] border-r-[2rem] border-y-transparent border-r-off-white lg:hidden" />
         <ul
           className={cn(
-            'flex items-center gap-12 max-lg:flex-col max-lg:bg-off-white max-lg:p-16 max-lg:text-xl',
+            'flex items-center gap-12 max-lg:-mt-8 max-lg:flex-col max-lg:bg-off-white max-lg:p-16 max-lg:text-xl',
             !isToggled && 'max-lg:hidden',
           )}
         >
