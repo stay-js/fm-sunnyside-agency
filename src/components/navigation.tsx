@@ -63,6 +63,7 @@ export const Navigation: React.FC = () => {
 
           <li>
             <a
+              onClick={() => setIsToggled(false)}
               href="#"
               className="block rounded-full bg-yellow px-8 py-4 font-serif text-lg uppercase text-black transition-colors hover:bg-yellow/60 lg:bg-white lg:text-sm lg:hover:bg-white/40 lg:hover:text-white"
             >
