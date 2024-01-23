@@ -1,5 +1,7 @@
 ---
+import { FaFacebookSquare, FaInstagram, FaTwitter, FaPinterest } from 'react-icons/fa';
 import { Navigation } from '~/components/navigation';
+import { Logo } from '~/components/logo';
 ---
 
 <html lang="en" class="scroll-smooth">
@@ -34,8 +36,19 @@ import { Navigation } from '~/components/navigation';
           We are creatives
         </h1>
 
-        <a href="#transform">
-          <img src="/icon-arrow-down.svg" alt="Down arrow" title="Scroll to content" />
+        <a class="group" href="#transform" title="Scroll to content">
+          <svg width="36" height="114" xmlns="http://www.w3.org/2000/svg">
+            <g
+              class="stroke-white group-hover:stroke-white/80 transition-colors"
+              stroke-width="6"
+              fill="none"
+              fill-rule="evenodd"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M18 3v100M3 95.484l15 15 15-15"></path>
+            </g>
+          </svg>
         </a>
       </div>
 
@@ -176,40 +189,42 @@ import { Navigation } from '~/components/navigation';
       </div>
     </main>
 
-    <footer class="text-dark-moderate-cyan bg-[#90d4c5] p-12">
-      <h2 class="text-center text-2xl">sunnyside</h2>
+    <footer class="text-dark-moderate-cyan bg-[#90d4c5] p-12 flex flex-col items-center">
+      <div class="text-[#2C7566]">
+        <Logo />
+      </div>
 
       <ul class="mt-6 flex gap-16 justify-center">
         <li>
-          <a href="#">About</a>
+          <a href="#" class="hover:text-white transition-colors">About</a>
         </li>
         <li>
-          <a href="#">Services</a>
+          <a href="#" class="hover:text-white transition-colors">Services</a>
         </li>
         <li>
-          <a href="#">Projects</a>
+          <a href="#" class="hover:text-white transition-colors">Projects</a>
         </li>
       </ul>
 
-      <ul class="mt-16 justify-center flex gap-8">
+      <ul class="mt-16 justify-center flex gap-8 text-[#2C7566]">
         <li>
-          <a href="#">
-            <img src="/icon-facebook.svg" alt="Facebook" title="Facebook" />
+          <a href="#" title="Facebook" class="hover:text-white transition-colors">
+            <FaFacebookSquare size={24} />
           </a>
         </li>
         <li>
-          <a href="#">
-            <img src="/icon-instagram.svg" alt="Instagram" title="Instagram" />
+          <a href="#" title="Instagram" class="hover:text-white transition-colors">
+            <FaInstagram size={24} />
           </a>
         </li>
         <li>
-          <a href="#">
-            <img src="/icon-twitter.svg" alt="Twitter" title="Twitter" />
+          <a href="#" title="Twitter" class="hover:text-white transition-colors">
+            <FaTwitter size={24} />
           </a>
         </li>
         <li>
-          <a href="#">
-            <img src="/icon-pinterest.svg" alt="Pinterest" title="Pinterest" />
+          <a href="#" title="Pinterest" class="hover:text-white transition-colors">
+            <FaPinterest size={24} />
           </a>
         </li>
       </ul>

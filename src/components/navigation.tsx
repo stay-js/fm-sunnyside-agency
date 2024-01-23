@@ -1,13 +1,14 @@
 import { useState } from 'react';
 import { cn } from '~/utils/cn';
+import { Logo } from './logo';
 
 export const Navigation: React.FC = () => {
   const [isToggled, setIsToggled] = useState(false);
 
   return (
     <nav className="relative flex w-full select-none items-center justify-between p-6 text-white">
-      <a href="#" className="text-3xl">
-        sunnyside
+      <a href="#">
+        <Logo />
       </a>
 
       <button
