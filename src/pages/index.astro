@@ -24,15 +24,15 @@ import Footer from '~/components/footer.astro';
   </head>
 
   <body class="bg-off-white text-lg">
-    <main class="grid-areas grid lg:grid-cols-2 grid-cols-1">
+    <main class="grid-areas grid md:grid-cols-2 grid-cols-1">
       <div
         style="grid-area: header;"
-        class="bg-[url(/mobile/image-header.jpg)] lg:bg-[url(/desktop/image-header.jpg)] flex flex-col items-center aspect-[375/538] lg:aspect-[9/5] bg-cover bg-no-repeat gap-12 lg:gap-20"
+        class="bg-[url(/mobile/image-header.jpg)] md:bg-[url(/desktop/image-header.jpg)] flex flex-col items-center aspect-[375/538] md:aspect-[9/5] bg-cover bg-no-repeat gap-12 md:gap-20"
       >
         <Navigation client:load />
 
         <h1
-          class="text-white px-6 font-serif text-4xl lg:text-6xl uppercase text-center tracking-widest"
+          class="text-white px-6 font-serif text-4xl md:text-6xl uppercase text-center tracking-widest"
         >
           We are creatives
         </h1>
@@ -55,10 +55,10 @@ import Footer from '~/components/footer.astro';
 
       <div
         style="grid-area: transform-content;"
-        class="grid gap-8 place-content-center lg:p-32 py-16 px-6 max-lg:text-center"
+        class="grid gap-8 place-content-center md:p-32 py-16 px-6 max-md:text-center"
         id="transform"
       >
-        <h2 class="font-serif text-3xl lg:text-4xl text-very-dark-desaturated-blue">
+        <h2 class="font-serif text-3xl md:text-5xl text-very-dark-desaturated-blue">
           Transform your brand
         </h2>
         <p class="text-dark-grayish-blue">
@@ -68,19 +68,19 @@ import Footer from '~/components/footer.astro';
 
         <a
           href="#"
-          class="relative mx-auto hover:after:opacity-100 after:transition-colors w-fit after:absolute after:-z-10 after:bottom-0 after:opacity-40 after:block after:w-full after:h-3 after:bg-yellow after:rounded-full"
+          class="relative max-lg:mx-auto hover:after:opacity-100 after:transition-colors w-fit after:absolute after:-z-10 after:bottom-0 after:opacity-40 after:block after:w-full after:h-3 after:bg-yellow after:rounded-full"
         >
           <span class="p-2 uppercase font-serif text-very-dark-desaturated-blue">Learn more</span>
         </a>
       </div>
 
       <picture style="grid-area: transform-image;">
-        <source media="(min-width:1024px)" srcset="/desktop/image-transform.jpg" />
+        <source media="(min-width:768px)" srcset="/desktop/image-transform.jpg" />
         <img src="/mobile/image-transform.jpg" class="w-full h-full" alt="Transform your brand" />
       </picture>
 
       <picture style="grid-area: stand-out-image;">
-        <source media="(min-width:1024px)" srcset="/desktop/image-stand-out.jpg" />
+        <source media="(min-width:768px)" srcset="/desktop/image-stand-out.jpg" />
         <img
           src="/mobile/image-stand-out.jpg"
           class="w-full h-full"
@@ -90,9 +90,9 @@ import Footer from '~/components/footer.astro';
 
       <div
         style="grid-area: stand-out-content;"
-        class="grid gap-8 place-content-center lg:p-32 py-16 px-6 max-lg:text-center"
+        class="grid gap-8 place-content-center md:p-32 py-16 px-6 max-md:text-center"
       >
-        <h2 class="font-serif text-3xl lg:text-4xl text-very-dark-desaturated-blue">
+        <h2 class="font-serif text-3xl md:text-5xl text-very-dark-desaturated-blue">
           Stand out to the right audience
         </h2>
         <p class="text-dark-grayish-blue">
@@ -101,7 +101,7 @@ import Footer from '~/components/footer.astro';
         </p>
         <a
           href="#"
-          class="relative mx-auto hover:after:opacity-100 after:transition-colors w-fit after:absolute after:-z-10 after:bottom-0 after:opacity-40 after:block after:w-full after:h-3 after:bg-soft-red after:rounded-full"
+          class="relative max-lg:mx-auto hover:after:opacity-100 after:transition-colors w-fit after:absolute after:-z-10 after:bottom-0 after:opacity-40 after:block after:w-full after:h-3 after:bg-soft-red after:rounded-full"
         >
           <span class="p-2 uppercase font-serif text-very-dark-desaturated-blue">Learn more</span>
         </a>
@@ -109,10 +109,10 @@ import Footer from '~/components/footer.astro';
 
       <div
         style="grid-area: graphic-design;"
-        class="lg:bg-[url(/desktop/image-graphic-design.jpg)] bg-[url(/mobile/image-graphic-design.jpg)] bg-cover bg-no-repeat lg:aspect-[6/5] aspect-[5/8] flex flex-col gap-4 items-center justify-end lg:p-16 pb-16 text-dark-desaturated-cyan"
+        class="md:bg-[url(/desktop/image-graphic-design.jpg)] bg-[url(/mobile/image-graphic-design.jpg)] bg-cover bg-no-repeat md:aspect-[6/5] aspect-[5/8] flex flex-col gap-4 items-center justify-end md:p-16 pb-16 text-dark-desaturated-cyan"
       >
         <h2 class="text-center font-serif font-bold text-3xl">Graphic design</h2>
-        <p class="text-center lg:max-w-[40ch] px-6">
+        <p class="text-center md:max-w-[40ch] px-6">
           Great design makes you memorable. We deliver artwork that underscores your brand message
           and captures potential clients' attention.
         </p>
@@ -120,10 +120,10 @@ import Footer from '~/components/footer.astro';
 
       <div
         style="grid-area: photography;"
-        class="lg:bg-[url(/desktop/image-photography.jpg)] bg-[url(/mobile/image-photography.jpg)] bg-cover bg-no-repeat gap-4 lg:aspect-[6/5] aspect-[5/8] flex flex-col items-center justify-end lg:p-16 pb-16 text-dark-blue"
+        class="md:bg-[url(/desktop/image-photography.jpg)] bg-[url(/mobile/image-photography.jpg)] bg-cover bg-no-repeat gap-4 md:aspect-[6/5] aspect-[5/8] flex flex-col items-center justify-end md:p-16 pb-16 text-dark-blue"
       >
         <h2 class="text-center font-serif font-bold text-3xl">Photography</h2>
-        <p class="text-center lg:max-w-[40ch] px-6">
+        <p class="text-center md:max-w-[40ch] px-6">
           Increase your credibility by getting the most stunning, high-quality photos that improve
           your business image.
         </p>
@@ -131,13 +131,13 @@ import Footer from '~/components/footer.astro';
 
       <div
         style="grid-area: testimonials;"
-        class="col-span-full flex flex-col gap-16 lg:p-24 px-6 py-16 text-center"
+        class="col-span-full flex flex-col gap-16 md:p-24 lg:px-32 md:py-32 px-6 py-16 text-center"
       >
-        <h2 class="lg:text-xl font-bold font-serif uppercase tracking-widest text-grayish-blue">
+        <h2 class="md:text-xl font-bold font-serif uppercase tracking-widest text-grayish-blue">
           Client testimonials
         </h2>
 
-        <div class="grid lg:grid-cols-3 gap-x-8 gap-y-20">
+        <div class="grid md:grid-cols-3 gap-x-8 md:gap-x-12 gap-y-20">
           <div class="flex flex-col gap-8 items-center">
             <img src="/image-emily.jpg" alt="Emily" class="aspect-square rounded-full w-16" />
             <p class="text-dark-grayish-blue">
@@ -183,24 +183,24 @@ import Footer from '~/components/footer.astro';
         </div>
       </div>
 
-      <div style="grid-area: gallery;" class="grid grid-cols-2 lg:grid-cols-4">
+      <div style="grid-area: gallery;" class="grid grid-cols-2 md:grid-cols-4">
         <picture>
-          <source media="(min-width:1024px)" srcset="/desktop/image-gallery-milkbottles.jpg" />
+          <source media="(min-width:768px)" srcset="/desktop/image-gallery-milkbottles.jpg" />
           <img src="/mobile/image-gallery-milkbottles.jpg" alt="Milkbottles" />
         </picture>
 
         <picture>
-          <source media="(min-width:1024px)" srcset="/desktop/image-gallery-orange.jpg" />
+          <source media="(min-width:768px)" srcset="/desktop/image-gallery-orange.jpg" />
           <img src="/mobile/image-gallery-orange.jpg" alt="Orange" />
         </picture>
 
         <picture>
-          <source media="(min-width:1024px)" srcset="/desktop/image-gallery-cone.jpg" />
+          <source media="(min-width:768px)" srcset="/desktop/image-gallery-cone.jpg" />
           <img src="/mobile/image-gallery-cone.jpg" alt="Cone" />
         </picture>
 
         <picture>
-          <source media="(min-width:1024px)" srcset="/desktop/image-gallery-sugarcubes.jpg" />
+          <source media="(min-width:768px)" srcset="/desktop/image-gallery-sugarcubes.jpg" />
           <img src="/mobile/image-gallery-sugar-cubes.jpg" alt="Sugarcubes" />
         </picture>
       </div>
@@ -224,7 +224,7 @@ import Footer from '~/components/footer.astro';
       'gallery';
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 768px) {
     .grid-areas {
       grid-template-areas:
         'header header'

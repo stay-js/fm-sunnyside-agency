@@ -12,7 +12,7 @@ export const Navigation: React.FC = () => {
       </a>
 
       <button
-        className="z-10 h-6 w-6 lg:hidden"
+        className="z-10 h-6 w-6 md:hidden"
         title="Toggle Menu"
         type="button"
         onClick={() => setIsToggled((value) => !value)}
@@ -39,15 +39,15 @@ export const Navigation: React.FC = () => {
 
       <div
         className={cn(
-          'left-0 top-12 max-lg:absolute max-lg:w-full max-lg:p-6',
-          !isToggled && 'max-lg:hidden',
+          'left-0 top-12 max-md:absolute max-md:w-full max-md:p-6',
+          !isToggled && 'max-md:hidden',
         )}
       >
-        <span className="-z-10 ml-auto block border-y-[2rem] border-r-[2rem] border-y-transparent border-r-off-white lg:hidden" />
+        <span className="-z-10 ml-auto block border-y-[2rem] border-r-[2rem] border-y-transparent border-r-off-white md:hidden" />
         <ul
           className={cn(
-            'flex items-center gap-8 max-lg:-mt-8 max-lg:flex-col max-lg:bg-off-white max-lg:p-12 max-lg:text-xl',
-            !isToggled && 'max-lg:hidden',
+            'flex items-center gap-8 max-md:-mt-8 max-md:flex-col max-md:bg-off-white max-md:p-12 max-md:text-xl',
+            !isToggled && 'max-md:hidden',
           )}
         >
           {['About', 'Services', 'Projects'].map((item) => (
@@ -55,7 +55,7 @@ export const Navigation: React.FC = () => {
               <a
                 onClick={() => setIsToggled(false)}
                 href="#"
-                className="text-dark-grayish-blue lg:text-white"
+                className="text-dark-grayish-blue md:text-white"
               >
                 {item}
               </a>
@@ -66,7 +66,7 @@ export const Navigation: React.FC = () => {
             <a
               onClick={() => setIsToggled(false)}
               href="#"
-              className="block rounded-full bg-yellow px-8 py-4 font-serif text-lg uppercase text-black transition-colors hover:bg-yellow/60 lg:bg-white lg:text-sm lg:hover:bg-white/40 lg:hover:text-white"
+              className="block rounded-full bg-yellow px-8 py-4 font-serif text-lg uppercase text-black transition-colors hover:bg-yellow/60 md:bg-white md:text-sm md:hover:bg-white/40 md:hover:text-white"
             >
               Contact
             </a>
