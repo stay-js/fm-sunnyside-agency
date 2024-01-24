@@ -1,17 +1,57 @@
 ---
 import { Navigation } from '~/components/navigation';
 import Footer from '~/components/footer.astro';
+
+const title = 'Frontend Mentor | Expenses chart component';
+const description =
+  'This is a solution to the Expenses chart component challenge on Frontend Mentor. Built with Astro and Tailwind CSS';
 ---
 
 <html lang="en" class="scroll-smooth">
   <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+
+    <meta name="author" content="Zétény Nagy" />
+    <link rel="author" href="https://znagy.hu" />
+
+    <meta
+      name="keywords"
+      content="frontend mentor, frontend, mentor, fem, landing page, sunnyside agency, sunnyside agency landing page, challenge, astro, react, tailwind, tailwindcss"
+    />
+
+    <meta name="color-scheme" content="light" />
+
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={title} />
+
+    <meta name="application-name" content={title} />
+
+    <meta name="twitter:card" content="summary" />
+
+    <meta name="robots" content="index, follow" />
+    <meta
+      name="googlebot"
+      content="index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
+    />
+
+    <title>{title}</title>
+    <meta property="og:title" content={title} />
+    <meta name="twitter:title" content={title} />
+
+    <meta name="description" content={description} />
+    <meta property="og:description" content={description} />
+    <meta name="twitter:description" content={description} />
+
+    <meta property="og:url" content="https://fm-sunnyside-agency.znagy.hu" />
+
+    <meta name="generator" content={Astro.generator} />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
     <link
       href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=DM+Sans:opsz,wght@9..40,400;9..40,700&family=Figtree:wght@600;800&display=swap"
       rel="stylesheet"
@@ -20,7 +60,6 @@ import Footer from '~/components/footer.astro';
       href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap"
       rel="stylesheet"
     />
-    <title>Astro</title>
   </head>
 
   <body class="bg-off-white text-lg">
@@ -38,12 +77,9 @@ import Footer from '~/components/footer.astro';
         </h1>
 
         <a class="group" href="#transform" title="Scroll to content">
-          <svg width="36" height="114" xmlns="http://www.w3.org/2000/svg">
+          <svg width="36" height="114">
             <g
-              class="stroke-white transition-colors group-hover:stroke-white/80"
-              stroke-width="6"
-              fill="none"
-              fill-rule="evenodd"
+              class="fill-none stroke-white stroke-[6] transition-colors group-hover:stroke-white/80"
               stroke-linecap="round"
               stroke-linejoin="round"
             >
@@ -61,6 +97,7 @@ import Footer from '~/components/footer.astro';
         <h2 class="font-serif text-3xl text-very-dark-desaturated-blue lg:text-5xl">
           Transform your brand
         </h2>
+
         <p class="text-dark-grayish-blue">
           We are a full-service creative agency specializing in helping brands grow fast. Engage
           your clients through compelling visuals that do most of the marketing for you.
@@ -79,6 +116,27 @@ import Footer from '~/components/footer.astro';
         <img src="/mobile/image-transform.jpg" class="h-full w-full" alt="Transform your brand" />
       </picture>
 
+      <div
+        style="grid-area: stand-out-content;"
+        class="grid place-content-center gap-8 px-6 py-16 max-lg:text-center lg:p-16 xl:p-32"
+      >
+        <h2 class="font-serif text-3xl text-very-dark-desaturated-blue lg:text-5xl">
+          Stand out to the right audience
+        </h2>
+
+        <p class="text-dark-grayish-blue">
+          Using a collaborative formula of designers, researchers, photographers, videographers, and
+          copywriters, we'll build and extend your brand in digital places.
+        </p>
+
+        <a
+          href="#"
+          class="relative w-fit after:absolute after:bottom-0 after:-z-10 after:block after:h-3 after:w-full after:rounded-full after:bg-soft-red after:opacity-40 after:transition-colors hover:after:opacity-100 max-lg:mx-auto"
+        >
+          <span class="p-2 font-serif uppercase text-very-dark-desaturated-blue">Learn more</span>
+        </a>
+      </div>
+
       <picture style="grid-area: stand-out-image;">
         <source media="(min-width:1024px)" srcset="/desktop/image-stand-out.jpg" />
         <img
@@ -89,29 +147,11 @@ import Footer from '~/components/footer.astro';
       </picture>
 
       <div
-        style="grid-area: stand-out-content;"
-        class="grid place-content-center gap-8 px-6 py-16 max-lg:text-center lg:p-16 xl:p-32"
-      >
-        <h2 class="font-serif text-3xl text-very-dark-desaturated-blue lg:text-5xl">
-          Stand out to the right audience
-        </h2>
-        <p class="text-dark-grayish-blue">
-          Using a collaborative formula of designers, researchers, photographers, videographers, and
-          copywriters, we'll build and extend your brand in digital places.
-        </p>
-        <a
-          href="#"
-          class="relative w-fit after:absolute after:bottom-0 after:-z-10 after:block after:h-3 after:w-full after:rounded-full after:bg-soft-red after:opacity-40 after:transition-colors hover:after:opacity-100 max-lg:mx-auto"
-        >
-          <span class="p-2 font-serif uppercase text-very-dark-desaturated-blue">Learn more</span>
-        </a>
-      </div>
-
-      <div
         style="grid-area: graphic-design;"
         class="flex aspect-[5/8] flex-col items-center justify-end gap-4 bg-[url(/mobile/image-graphic-design.jpg)] bg-cover bg-no-repeat pb-16 text-dark-desaturated-cyan lg:aspect-[6/5] lg:bg-[url(/desktop/image-graphic-design.jpg)] lg:p-16"
       >
         <h2 class="text-center font-serif text-3xl font-bold">Graphic design</h2>
+
         <p class="px-6 text-center lg:max-w-[45ch]">
           Great design makes you memorable. We deliver artwork that underscores your brand message
           and captures potential clients' attention.
@@ -123,6 +163,7 @@ import Footer from '~/components/footer.astro';
         class="flex aspect-[5/8] flex-col items-center justify-end gap-4 bg-[url(/mobile/image-photography.jpg)] bg-cover bg-no-repeat pb-16 text-dark-blue lg:aspect-[6/5] lg:bg-[url(/desktop/image-photography.jpg)] lg:p-16"
       >
         <h2 class="text-center font-serif text-3xl font-bold">Photography</h2>
+
         <p class="px-6 text-center lg:max-w-[45ch]">
           Increase your credibility by getting the most stunning, high-quality photos that improve
           your business image.
@@ -140,6 +181,7 @@ import Footer from '~/components/footer.astro';
         <div class="grid gap-x-8 gap-y-20 lg:grid-cols-3 lg:gap-x-12">
           <div class="flex flex-col items-center gap-8">
             <img src="/image-emily.jpg" alt="Emily" class="aspect-square w-16 rounded-full" />
+
             <p class="text-dark-grayish-blue">
               We put our trust in Sunnyside and they delivered, making sure our needs were met and
               deadlines were always hit.
@@ -153,6 +195,7 @@ import Footer from '~/components/footer.astro';
 
           <div class="flex flex-col items-center gap-8">
             <img src="/image-thomas.jpg" alt="Thomas" class="aspect-square w-16 rounded-full" />
+
             <p class="text-dark-grayish-blue">
               Sunnyside's enthusiasm coupled with their keen interest in our brand's success made it
               a satisfying and enjoyable experience.
@@ -168,6 +211,7 @@ import Footer from '~/components/footer.astro';
 
           <div class="flex flex-col items-center gap-8">
             <img src="/image-jennie.jpg" alt="Jennie" class="aspect-square w-16 rounded-full" />
+
             <p class="text-dark-grayish-blue">
               Incredible end result! Our sales increased over 400% when we worked with Sunnyside.
               Highly recommended!

@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+
+Host: https://fm-sunnyside-agency.znagy.hu
+Sitemap: https://fm-sunnyside-agency.znagy.hu/sitemap.xml
