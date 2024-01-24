@@ -1,5 +1,7 @@
 # Frontend Mentor - Sunnyside agency landing page solution
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b91b0bfe-5510-4eaf-8f83-94799cb410d7/deploy-status)](https://app.netlify.com/sites/elaborate-starburst-2835e0/deploys)
+
 This is a solution to the [Sunnyside agency landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/sunnyside-agency-landing-page-7yVs3B6ef). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
