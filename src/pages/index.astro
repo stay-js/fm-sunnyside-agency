@@ -24,15 +24,15 @@ import Footer from '~/components/footer.astro';
   </head>
 
   <body class="bg-off-white text-lg">
-    <main class="grid-areas grid lg:grid-cols-2 grid-cols-1">
+    <main class="grid-areas grid grid-cols-1 lg:grid-cols-2">
       <div
         style="grid-area: header;"
-        class="bg-[url(/mobile/image-header.jpg)] lg:bg-[url(/desktop/image-header.jpg)] flex flex-col items-center aspect-[375/538] lg:aspect-[9/5] bg-cover bg-no-repeat gap-12 lg:gap-24"
+        class="flex aspect-[375/538] flex-col items-center gap-12 bg-[url(/mobile/image-header.jpg)] bg-cover bg-no-repeat lg:aspect-[9/5] lg:gap-24 lg:bg-[url(/desktop/image-header.jpg)]"
       >
         <Navigation client:load />
 
         <h1
-          class="text-white px-6 font-serif text-4xl lg:text-6xl uppercase text-center tracking-widest"
+          class="px-6 text-center font-serif text-4xl uppercase tracking-widest text-white lg:text-6xl"
         >
           We are creatives
         </h1>
@@ -40,7 +40,7 @@ import Footer from '~/components/footer.astro';
         <a class="group" href="#transform" title="Scroll to content">
           <svg width="36" height="114" xmlns="http://www.w3.org/2000/svg">
             <g
-              class="stroke-white group-hover:stroke-white/80 transition-colors"
+              class="stroke-white transition-colors group-hover:stroke-white/80"
               stroke-width="6"
               fill="none"
               fill-rule="evenodd"
@@ -55,10 +55,10 @@ import Footer from '~/components/footer.astro';
 
       <div
         style="grid-area: transform-content;"
-        class="grid gap-8 place-content-center xl:p-32 lg:p-16 py-16 px-6 max-lg:text-center"
+        class="grid place-content-center gap-8 px-6 py-16 max-lg:text-center lg:p-16 xl:p-32"
         id="transform"
       >
-        <h2 class="font-serif text-3xl lg:text-5xl text-very-dark-desaturated-blue">
+        <h2 class="font-serif text-3xl text-very-dark-desaturated-blue lg:text-5xl">
           Transform your brand
         </h2>
         <p class="text-dark-grayish-blue">
@@ -68,31 +68,31 @@ import Footer from '~/components/footer.astro';
 
         <a
           href="#"
-          class="relative max-lg:mx-auto hover:after:opacity-100 after:transition-colors w-fit after:absolute after:-z-10 after:bottom-0 after:opacity-40 after:block after:w-full after:h-3 after:bg-yellow after:rounded-full"
+          class="relative w-fit after:absolute after:bottom-0 after:-z-10 after:block after:h-3 after:w-full after:rounded-full after:bg-yellow after:opacity-40 after:transition-colors hover:after:opacity-100 max-lg:mx-auto"
         >
-          <span class="p-2 uppercase font-serif text-very-dark-desaturated-blue">Learn more</span>
+          <span class="p-2 font-serif uppercase text-very-dark-desaturated-blue">Learn more</span>
         </a>
       </div>
 
       <picture style="grid-area: transform-image;">
         <source media="(min-width:1024px)" srcset="/desktop/image-transform.jpg" />
-        <img src="/mobile/image-transform.jpg" class="w-full h-full" alt="Transform your brand" />
+        <img src="/mobile/image-transform.jpg" class="h-full w-full" alt="Transform your brand" />
       </picture>
 
       <picture style="grid-area: stand-out-image;">
         <source media="(min-width:1024px)" srcset="/desktop/image-stand-out.jpg" />
         <img
           src="/mobile/image-stand-out.jpg"
-          class="w-full h-full"
+          class="h-full w-full"
           alt="Stand out to the right audience"
         />
       </picture>
 
       <div
         style="grid-area: stand-out-content;"
-        class="grid gap-8 place-content-center xl:p-32 lg:p-16 py-16 px-6 max-lg:text-center"
+        class="grid place-content-center gap-8 px-6 py-16 max-lg:text-center lg:p-16 xl:p-32"
       >
-        <h2 class="font-serif text-3xl lg:text-5xl text-very-dark-desaturated-blue">
+        <h2 class="font-serif text-3xl text-very-dark-desaturated-blue lg:text-5xl">
           Stand out to the right audience
         </h2>
         <p class="text-dark-grayish-blue">
@@ -101,18 +101,18 @@ import Footer from '~/components/footer.astro';
         </p>
         <a
           href="#"
-          class="relative max-lg:mx-auto hover:after:opacity-100 after:transition-colors w-fit after:absolute after:-z-10 after:bottom-0 after:opacity-40 after:block after:w-full after:h-3 after:bg-soft-red after:rounded-full"
+          class="relative w-fit after:absolute after:bottom-0 after:-z-10 after:block after:h-3 after:w-full after:rounded-full after:bg-soft-red after:opacity-40 after:transition-colors hover:after:opacity-100 max-lg:mx-auto"
         >
-          <span class="p-2 uppercase font-serif text-very-dark-desaturated-blue">Learn more</span>
+          <span class="p-2 font-serif uppercase text-very-dark-desaturated-blue">Learn more</span>
         </a>
       </div>
 
       <div
         style="grid-area: graphic-design;"
-        class="lg:bg-[url(/desktop/image-graphic-design.jpg)] bg-[url(/mobile/image-graphic-design.jpg)] bg-cover bg-no-repeat lg:aspect-[6/5] aspect-[5/8] flex flex-col gap-4 items-center justify-end lg:p-16 pb-16 text-dark-desaturated-cyan"
+        class="flex aspect-[5/8] flex-col items-center justify-end gap-4 bg-[url(/mobile/image-graphic-design.jpg)] bg-cover bg-no-repeat pb-16 text-dark-desaturated-cyan lg:aspect-[6/5] lg:bg-[url(/desktop/image-graphic-design.jpg)] lg:p-16"
       >
-        <h2 class="text-center font-serif font-bold text-3xl">Graphic design</h2>
-        <p class="text-center lg:max-w-[45ch] px-6">
+        <h2 class="text-center font-serif text-3xl font-bold">Graphic design</h2>
+        <p class="px-6 text-center lg:max-w-[45ch]">
           Great design makes you memorable. We deliver artwork that underscores your brand message
           and captures potential clients' attention.
         </p>
@@ -120,10 +120,10 @@ import Footer from '~/components/footer.astro';
 
       <div
         style="grid-area: photography;"
-        class="lg:bg-[url(/desktop/image-photography.jpg)] bg-[url(/mobile/image-photography.jpg)] bg-cover bg-no-repeat gap-4 lg:aspect-[6/5] aspect-[5/8] flex flex-col items-center justify-end lg:p-16 pb-16 text-dark-blue"
+        class="flex aspect-[5/8] flex-col items-center justify-end gap-4 bg-[url(/mobile/image-photography.jpg)] bg-cover bg-no-repeat pb-16 text-dark-blue lg:aspect-[6/5] lg:bg-[url(/desktop/image-photography.jpg)] lg:p-16"
       >
-        <h2 class="text-center font-serif font-bold text-3xl">Photography</h2>
-        <p class="text-center lg:max-w-[45ch] px-6">
+        <h2 class="text-center font-serif text-3xl font-bold">Photography</h2>
+        <p class="px-6 text-center lg:max-w-[45ch]">
           Increase your credibility by getting the most stunning, high-quality photos that improve
           your business image.
         </p>
@@ -131,50 +131,50 @@ import Footer from '~/components/footer.astro';
 
       <div
         style="grid-area: testimonials;"
-        class="col-span-full flex flex-col gap-16 lg:p-24 lg:px-32 lg:py-32 px-6 py-16 text-center"
+        class="col-span-full flex flex-col gap-16 px-6 py-16 text-center lg:p-24 lg:px-32 lg:py-32"
       >
-        <h2 class="lg:text-xl font-bold font-serif uppercase tracking-widest text-grayish-blue">
+        <h2 class="font-serif font-bold uppercase tracking-widest text-grayish-blue lg:text-xl">
           Client testimonials
         </h2>
 
-        <div class="grid lg:grid-cols-3 gap-x-8 lg:gap-x-12 gap-y-20">
-          <div class="flex flex-col gap-8 items-center">
-            <img src="/image-emily.jpg" alt="Emily" class="aspect-square rounded-full w-16" />
+        <div class="grid gap-x-8 gap-y-20 lg:grid-cols-3 lg:gap-x-12">
+          <div class="flex flex-col items-center gap-8">
+            <img src="/image-emily.jpg" alt="Emily" class="aspect-square w-16 rounded-full" />
             <p class="text-dark-grayish-blue">
               We put our trust in Sunnyside and they delivered, making sure our needs were met and
               deadlines were always hit.
             </p>
 
             <div>
-              <h3 class="text-xl text-very-dark-desaturated-blue font-serif font-bold">Emily R.</h3>
+              <h3 class="font-serif text-xl font-bold text-very-dark-desaturated-blue">Emily R.</h3>
               <span class="text-grayish-blue">Marketing Director</span>
             </div>
           </div>
 
-          <div class="flex flex-col gap-8 items-center">
-            <img src="/image-thomas.jpg" alt="Thomas" class="aspect-square rounded-full w-16" />
+          <div class="flex flex-col items-center gap-8">
+            <img src="/image-thomas.jpg" alt="Thomas" class="aspect-square w-16 rounded-full" />
             <p class="text-dark-grayish-blue">
               Sunnyside's enthusiasm coupled with their keen interest in our brand's success made it
               a satisfying and enjoyable experience.
             </p>
 
             <div>
-              <h3 class="text-xl text-very-dark-desaturated-blue font-serif font-bold">
+              <h3 class="font-serif text-xl font-bold text-very-dark-desaturated-blue">
                 Thomas S.
               </h3>
               <span class="text-grayish-blue">Chief Operating Officer</span>
             </div>
           </div>
 
-          <div class="flex flex-col gap-8 items-center">
-            <img src="/image-jennie.jpg" alt="Jennie" class="aspect-square rounded-full w-16" />
+          <div class="flex flex-col items-center gap-8">
+            <img src="/image-jennie.jpg" alt="Jennie" class="aspect-square w-16 rounded-full" />
             <p class="text-dark-grayish-blue">
               Incredible end result! Our sales increased over 400% when we worked with Sunnyside.
               Highly recommended!
             </p>
 
             <div>
-              <h3 class="text-xl text-very-dark-desaturated-blue font-serif font-bold">
+              <h3 class="font-serif text-xl font-bold text-very-dark-desaturated-blue">
                 Jennie F.
               </h3>
               <span class="text-grayish-blue">Business Owner</span>
@@ -188,24 +188,24 @@ import Footer from '~/components/footer.astro';
           <source media="(min-width:1024px)" srcset="/desktop/image-gallery-milkbottles.jpg" />
           <img
             src="/mobile/image-gallery-milkbottles.jpg"
-            class="w-full h-full"
+            class="h-full w-full"
             alt="Milkbottles"
           />
         </picture>
 
         <picture>
           <source media="(min-width:1024px)" srcset="/desktop/image-gallery-orange.jpg" />
-          <img src="/mobile/image-gallery-orange.jpg" class="w-full h-full" alt="Orange" />
+          <img src="/mobile/image-gallery-orange.jpg" class="h-full w-full" alt="Orange" />
         </picture>
 
         <picture>
           <source media="(min-width:1024px)" srcset="/desktop/image-gallery-cone.jpg" />
-          <img src="/mobile/image-gallery-cone.jpg" class="w-full h-full" alt="Cone" />
+          <img src="/mobile/image-gallery-cone.jpg" class="h-full w-full" alt="Cone" />
         </picture>
 
         <picture>
           <source media="(min-width:1024px)" srcset="/desktop/image-gallery-sugarcubes.jpg" />
-          <img src="/mobile/image-gallery-sugar-cubes.jpg" class="w-full h-full" alt="Sugarcubes" />
+          <img src="/mobile/image-gallery-sugar-cubes.jpg" class="h-full w-full" alt="Sugarcubes" />
         </picture>
       </div>
     </main>
