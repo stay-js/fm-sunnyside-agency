@@ -6,7 +6,7 @@ export const Navigation: React.FC = () => {
 
   return (
     <nav className="relative flex w-full select-none items-center justify-between p-6 text-white lg:p-10">
-      <a href="#">
+      <a href="#" title="sunnyside">
         <img className="h-8" src="/logo-white.svg" alt="sunnyside" />
       </a>
 
